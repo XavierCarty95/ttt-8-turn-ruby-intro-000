@@ -7,6 +7,11 @@ def display_board(board)
   puts "   |   |   "
 end
 
+def input_to_index(input)
+  index = input.to_i
+  index
+end
+
 def valid_move?(board , index)
    if index < 8
      return true

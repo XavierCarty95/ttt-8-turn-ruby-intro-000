@@ -6,3 +6,13 @@ def display_board(board)
   puts "-----------"
   puts "   |   |   "
 end
+
+def valid_move?(board , index)
+  def position_taken?(board , index)
+    board[index] == "" || board[index] === " " || board[index] == " "
+     return true
+   else 
+     return false
+   end 
+  end 
+ end

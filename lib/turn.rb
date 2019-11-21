@@ -12,6 +12,9 @@ def input_to_index(input)
   index
 end
 
+def move(board, index , character = "X")
+  board[index] = character
+end
 def valid_move?(board , index)
    if index < 8 && position_taken?(index) == true
      return true

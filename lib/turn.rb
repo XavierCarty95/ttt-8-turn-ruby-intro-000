@@ -44,7 +44,7 @@ def move(board, index, character = "X")
   return board
 end
 
-#Asks user for a number, check if it is valid, and if it's not, recursively continues to ask for a number
+
 def turn (board)
   puts "Please enter 1-9:"
   input = gets.strip

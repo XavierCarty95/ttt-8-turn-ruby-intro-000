@@ -33,8 +33,8 @@ end
 
 if(position_taken?(board,index)) == false && (on_board?(index) == true)
    return true
- else 
-   return false 
+ else
+   return false
  end
 end
 def move(board, index , character = "X")

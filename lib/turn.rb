@@ -11,10 +11,7 @@ def input_to_index(input)
   return index
 end
 
-def move(board, index , character = "X")
-  board[index] = character
-  return board
-end
+
 
 def valid_move?(board , index)
    if index < 8 && position_taken?(index) == true
@@ -32,6 +29,17 @@ def on_board?(num)
   else
     return false
  end
+end
+
+if(position_taken?(board,index)) == false && (on_board?(index) == true)
+   return true
+ else 
+   return false 
+ end
+end
+def move(board, index , character = "X")
+  board[index] = character
+  return board
 end
 
 def turn(board)

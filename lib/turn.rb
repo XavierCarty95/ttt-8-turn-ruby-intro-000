@@ -29,4 +29,7 @@ end
 def turn(board , input)
   puts "Please enter 1-9"
   input_to_index(input)
+  while(input < 9)
+   turn(input)
+ end
 end

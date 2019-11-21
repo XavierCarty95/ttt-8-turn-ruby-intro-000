@@ -38,7 +38,7 @@ def valid_move?(board, index)
   end
 end
 
-#Takes a users num and the board, and places the X or O char in that position
+
 def move(board, index, character = "X")
   board[index] = character
   return board
@@ -47,7 +47,7 @@ end
 #Asks user for a number, check if it is valid, and if it's not, recursively continues to ask for a number
 def turn (board)
   puts "Please enter 1-9:"
-  num = gets.chomp
+  num = gets.strip
   index = input_to_index(num)
   if valid_move?(board, index) == true
     move(board, index)

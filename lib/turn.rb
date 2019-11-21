@@ -8,6 +8,7 @@ def display_board(board)
 end
 
 def valid_move?(board , index)
+   if index < 8
   def position_taken?(board , index)
     board[index] == "" || board[index] === " " || board[index] == " "
      return true

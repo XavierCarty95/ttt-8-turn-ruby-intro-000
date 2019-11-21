@@ -7,8 +7,8 @@ def display_board(board)
 end
 
 #coverts a user's place on the board to the index integer
-def input_to_index(user_input)
-  index = user_input.to_i
+def input_to_index(input)
+  index = input
   index -= 1
   return index
 end

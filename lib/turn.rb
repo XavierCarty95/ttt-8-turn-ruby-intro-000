@@ -6,13 +6,15 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-
+#
 def input_to_index(input)
-  index = input -1
+  index = input
+  index -= 1
   return index
 end
 
 
+def valid_move?(board, index)
   def position_taken?(array, ind)
     if array[ind] == " " || array[ind] == "" || array[ind] == nil
       return false

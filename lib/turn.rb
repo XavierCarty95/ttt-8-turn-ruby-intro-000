@@ -18,16 +18,20 @@ end
 
 def valid_move?(board , index)
    if index < 8 && position_taken?(index) == true
-     return true
-end
-
-
- def position_taken?(board , index)
-   if board[index] == "" || board[index] === " " || board[index] == nil
+  def position_taken?(board , index)
+       if board[index] == "" || board[index] === " " || board[index] == nil
     return false
   else
     return true
   end
+end
+
+def on_board?(num)
+  if num.between?(0,8) == true
+    return true
+  else 
+    return false 
+ end 
 end
 
 def turn(board)
